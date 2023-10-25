@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,10 +10,10 @@
 }
 
 .weoqwe{
-    font-family: Inter;
+    font-family: Arial;
     font-size: 48px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 750;
     line-height: normal;
     position: relative;
     top: -90px;
@@ -28,12 +32,10 @@
     width: 551px;
     height: 59px;
     flex-shrink: 0;
-    color: #FFF;
+    color: #d3d3d3;
     font-family: Istok Web;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: normal;
+    font-size: 20px;
     position: relative;
     top: -100px;
     left: -90px;
@@ -76,62 +78,7 @@ body{
 }
 
 .poligono{
-    margin-top: 256px;
-}
-
-.content-chamada h3{
-    font-weight: normal;
-    opacity: 0,6;
-}
-
-.content-chamada a{
-    display: inline-block;
-    padding: 8px 20px;
-    border-radius: 20px;
-    color: white;
-    margin: 10px 0;
-    text-decoration: none;
-    border: 1px solid white;
-}
-
-.img-content{
-    position: relatvia;
-    width: 80%;
-}
-
-.img-content img{
-    position: absolute;
-    max-width: 100%;
-}
-
-.card{
-    margin-top: 4%;
-    width: 250px;
-}
-
-.img1{
-    margin: 30px;
-    width: 70%;
-}
-
-.img2{
-    margin: 30px;
-    width: 70%;
-}
-
-.img3{
-    margin: 30px;
-    width: 70%;
-}
-
-.img4{
-    margin: 30px;
-    width: 75,3%;
-}
-
-.img5{
-    margin: 30px;
-    width: 70%;
+    margin-top: 308px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
@@ -209,7 +156,8 @@ footer{
 }
 
 .card{
-    margin: 20px;
+    background-color: rgb(234, 250, 255);
+    margin: 90px;
 }
 
 .footer-col .medias-socias a:hover{
@@ -253,19 +201,25 @@ footer{
     }
 }
 
-.logosfiap{
-    justify-content: space-between;
+
+.kolo {
+    margin: 8%;
+    width: 80%;
+    padding: 15px;
+    display: inline-block; /* Add this property to make the cards display inline */
+    vertical-align: top;   /* Align the cards to the top */
+    box-sizing: border-box; /* Ensure box-sizing is respected */
 }
 
-.ajustimg{
-    text-align: center;
-    display: inline;
-    margin: 0 90px;
+.kioko {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* This will evenly space the cards */
 }
 
-
-.ajustimg :first-child{
-    margin-top: 95px;
+/* Add a media query to adjust card width on smaller screens */
+@media (max-width: 800px) {
+    .kolo {
+        width: 47%; /* Adjust card width for smaller screens */
+    }
 }
-
-
